@@ -8,29 +8,17 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import lombok.Data;
-
-@Data
 @Entity
-@Table(name = "tipo-questionario")
-public class TipoQuestionario implements Serializable{
+@Table(name = "CategoriaE")
+public class CategoriaE implements Serializable {
+
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
 	@GeneratedValue
 	private Long id;
-	
-	@Column(name="descrizione")
+
+	@Column(name = "descrizione", nullable = false)
 	private String descrizione;
-
-	public TipoQuestionario() {
-	}
-
-	public TipoQuestionario(Long id, String descrizione) {
-		this.id = id;
-		this.descrizione = descrizione;
-	}
 	
-	
-
 }
