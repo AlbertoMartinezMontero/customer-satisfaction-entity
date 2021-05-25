@@ -1,5 +1,5 @@
 package com.fideuram.customersatisfaction.dto;
 
-public class CustomerSatisfactionResposnseDto {
+public class CustomerSatisfactionResponseDto {
 
 }
